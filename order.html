@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page title</title>
+      <meta name="viewport" 
+    content="width=device-width, initial-scale=1">
+    <style>
+      *{
+        margin:0;
+        padding:0;                         
+      } 
+                                        
+     #ff{
+         font-size:1em;
+         color:tomato;         
+     }
+        
+     #restaurant{
+         font-size:0.5em;
+         color:gray;         
+     }
+     
+     header{
+         background-image:url("order.jpg");                  
+         background-repeat:no-repeat; 
+         background-size:cover;      
+         height:16em;  
+                          
+     }  
+  
+     a.a:link{
+         font-size:.7em;
+         text-decoration:none;
+     
+     }
+     
+     a.a:active{
+         font-size:1em;
+         color:white;
+         text-decoration:none; 
+     } 
+        
+     a.a:visited{
+         font-size:.7em;
+         text-decoration:none; 
+     } 
+     
+     a.a:hover{
+         font-size:1em;
+         text-decoration:none;
+         color:white;
+     }
+     #currentpage{
+         color:tomato;
+         font-size:1.5em;
+     }
+     
+    .a{
+         color:#4e4e4e;
+         padding:0.3em;
+    }
+    
+    #headert{           
+         width:100%;     
+    } 
+    
+    #menu{
+        text-align:right;
+    } 
+    
+    #orderinfo{
+        width:12em;
+        border:solid 0.1em #4b7195;
+        font-size:0.9em;
+        background-color:#4b7195;   
+        text-align:center;     
+    } 
+    
+   .inputp,.inputinfo{
+        text-align:center;
+        padding:0.3em 0.1em;
+        margin:0.5em 0em;
+        width:12em;        
+    }
+    
+    #conform{
+        color:#006c13;
+        font-size:1.1em;
+        border:solid 0.2em #3e5d7b;
+        border-radius:1em 1em;
+        padding:0.3em 0.6em;
+        margin-bottom:1em;
+        
+    }
+    
+    
+   #menudiv{        
+  
+   height:30em;    
+   overflow-x:scroll;   
+   overflow-y:scroll;
+    }
+    
+    main{
+     background-color:#55acffee;
+    }
+     
+   .tddiv{
+      height:34em;      
+      width:23em;
+      background-color:coral;    
+      border:solid 0.01em #ffdfaa;
+      border-radius:0.5em 0.5em; 
+      font-size:0.5em;      
+      box-shadow:rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 
+      0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+      text-align:center;
+    }
+    
+        
+    .td{   
+      width:11.5em;
+      height:17em;          
+      font-size:0.5em;                                       
+    }
+    
+    
+    
+    
+    .img{   
+      width:23em;    
+      border-radius:0.1em 0.2em;                 
+    }
+    
+    .name{
+      text-align:center;   
+      color:#45111d;  
+      padding:0.5em 0em;
+     
+      
+    }
+   
+   
+    .price{
+      text-align:center;    
+      color:white;  
+      padding:0.1em 0em;   
+    }   
+    
+    
+    h3{
+        
+     font-size:1.1em;
+     color:#1b0074;   
+     padding:1em;
+        
+    }
+    
+    .addbutton{
+        margin:0.3em;
+        border:solid 0.1em white;
+        border-radius:1em 1em;
+        padding:0.1em 0.3em;
+        background-color:tomato;
+        color:white;
+    }
+    
+    #foodcart{
+        height:11.5em;
+        width:12em;
+        background-color:white;
+        border:solid 0.1em #4b7195;
+        overflow-x:scroll;
+    }
+    
+    
+    
+    
+    
+
+
+
+
+/* cart css */
+
+
+
+
+    
+    
+   .cartdiv{
+      height:45em;      
+      width:25em;
+      background-color:coral;    
+      border:solid 0.01em #ffdfaa;
+      border-radius:0.5em 0.5em; 
+      font-size:0.5em;      
+      box-shadow:rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 
+      0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+      text-align:center;
+    }
+    
+        
+    .carttd{   
+      width:12.5em;
+      height:22.5em;          
+      font-size:0.5em;                                       
+    }
+    
+    
+    
+    
+    .cartimg{   
+      width:25em;          
+      border-radius:0.1em 0.2em;                 
+    }
+    
+    .cartname{
+      text-align:center;   
+      color:#45111d;  
+      padding:0.2em 0em;
+      
+    }
+   
+   
+    .cartprice{
+      text-align:center;    
+      color:white;  
+      padding:0.5em 0em;  
+      font-size:1.3em; 
+    }   
+          
+    
+    .mpbutton1{
+        margin:0.2em;
+        border:solid 0.1em white;
+        border-radius:5em 5em;
+        padding:0.7em 0.85em;
+        background-color:red;
+        color:white;
+        font-size:1.3em;
+    
+    }
+    
+       
+    .mpbutton2{
+        margin:0.2em;
+        border:solid 0.1em white;
+        border-radius:10em 10em;
+        padding:1em 0.7em;
+        background-color:red;
+        color:white;
+        font-size:1.3em;
+    
+    }
+    
+      
+    .mpbutton3{
+        margin:0.2em;
+        border:solid 0.1em white;
+        border-radius:10em 10em;
+        padding:1em 0.5em;
+        background-color:red;
+        color:white;
+        font-size:1.3em;
+    
+    }
+    
+       
+    .mpbutton4{
+        margin:0.2em;
+        border:solid 0.1em white;
+        border-radius:10em 10em;
+        padding:0.7em 0.7em;
+        background-color:red;
+        color:white;
+        font-size:1.3em;
+    
+    }
+    
+    
+    .removebutton{
+        margin:0.2em;
+        border:solid 0.1em white;
+        border-radius:1em 1em;
+        padding:0.1em 0.3em;
+        background-color:red;
+        color:white;
+        font-size:3em;
+    }
+    
+    
+     
+    
+    
+    
+    
+    
+  
+    </style>
+</head>
+<body>
+  <header>
+<table id="headert">  
+ <tr>
+  <td>
+ 
+  <h1><span id="ff"><b>FF</b></span><span id="restaurant"><i>restaurant</i></span>
+  </h1>
+
+  </td>
+  <td id="menu">
+ 
+  
+    
+   <div id="options">
+    <a class="a" href="index.html" id="home">home</a>
+    <a class="a" href="menu.html" id="menu">menu</a>
+    <a class="a" href="about.html" id="about">about</a>
+    <a class="a" href="report.html" id="report">report</a>
+    <a class="a" href="order.html" id="order"><span id="currentpage">order</span></a>        
+    </div>                        
+                                       
+ </td>  
+ </tr>
+</table>
+</header>    
+       
+
+
+<main>
+ 
+ <table>
+  <tr>
+   <td id="orderinfo">
+    <form>
+     
+     <p class="inputp" id="name">name <input class="inputinfo" id="namein" type="text" placeholder="please enter your name" required></p>   
+     <p class="inputp" id="number">number<input class="inputinfo" id="numberin" type="number" placeholder="please enter your mobile number" required></p>   
+     <p class="inputp" id="address">address<input class="inputinfo" id="addressin" type="text" placeholder="please enter your addres" required></p>   
+     
+     
+     
+     
+     
+     
+     
+      
+     <div id="foodcart">
+     <table>
+       <tr id="carttr"></tr>
+       </table>
+     </div> 
+     
+      
+     
+     
+     <button id="conform" type="submit" ><b>conform</b></button>
+    </form>              
+   </td>   
+      
+   <td id="ordermenu">
+       
+    <div id="menudiv">
+        
+     <table>
+       
+       <tr class="menutr">       
+       <td class="heading"  collspan="2">
+      <h3>Breakfast</h3>
+      </tr> 
+              
+      <tr class="menutr">
+       <td class="td">
+        <div class="tddiv">
+         <img class="img" id="imgb1" src="1breakfast.jpg">         
+         <p id="nameb1" class="name">Healthy porridge bowl</p>         
+         <p id="priceb1" class="price">10$</p>
+         <button id="b1" class="addbutton" type="button" onclick="add()">Add</button>            
+         </div>   
+       </td>
+       
+       <td class="td">
+        <div class="tddiv">
+         <img class="img" id="imgb2" src="2breakfast.jpg">         
+         <p id="nameb2" class="name">Spanish & tuna pancakes</p>         
+         <p id="priceb2" class="price">10$</p>   
+           <button id="b2" class="addbutton" type="button" onclick="add()">Add</button>        
+        </div>              
+       </td>                          
+      </tr>
+      
+      
+      
+      <tr class="menutr">
+       <td class="td">
+        <div class="tddiv">
+         <img class="img" id="imgb3" src="3breakfast.jpg">         
+         <p id="nameb3" class="name">Green egg</p>         
+         <p id="priceb3" class="price">10$</p> 
+           <button id="b3" class="addbutton" type="button" onclick="add()">Add</button>                      
+         </div>   
+       </td>
+       
+       <td class="td">
+        <div class="tddiv">
+         <img class="img" id="imgb4" src="4breakfast.jpg">         
+         <p id="nameb4" class="name">Fruit & nut breakfast bowl</p>         
+         <p id="priceb4" class="price">10$</p>  
+           <button id="b4" class="addbutton" type="button" onclick="add()">Add</button>         
+        </div>              
+       </td>                          
+      </tr>
+      
+     
+      <tr class="menutr">
+       <td class="td">
+        <div class="tddiv">
+         <img class="img" id="imgb5" src="5breakfast.jpg">         
+         <p id="nameb5" class="name">Saucy been baked eggs</p>         
+         <p id="priceb5" class="price">10$</p> 
+         <button id="b5" class="addbutton" type="button" onclick="add()">Add</button>                      
+         </div>   
+       </td> 
+       <td class="td"></td>                     
+      </tr>
+        
+      
+      <tr class="menutr">       
+       <td class="heading"  collspan="2">
+      <h3>Lunch</h3>
+      </tr> 
+      
+      
+      <tr class="menutr">
+       <td class="td">
+        <div class="tddiv">
+         <img class="img" id="imgl1" src="1lunch.jpg">         
+         <p id="namel1" class="name">Hainense chicken rice</p>         
+         <p id="pricel1" class="price">10$</p>   
+         <button id="l1" class="addbutton" type="button" onclick="add()">Add</button>                    
+         </div>   
+       </td>
+       
+       <td class="td">
+        <div class="tddiv">
+         <img class="img" id="imgl2" src="2lunch.jpg">         
+         <p id="namel2" class="name">Char kuay teow</p>         
+         <p id="pricel2" class="price">10$</p>   
+         <button id="l2" class="addbutton" type="button" onclick="add()">Add</button>        
+        </div>              
+       </td>                          
+      </tr>
+      
+      
+      
+      <tr class="menutr">
+       <td class="td">
+        <div class="tddiv">
+         <img class="img" id="imgl3" src="3lunch.jpg">         
+         <p id="namel3" class="name">Fish head curry</p>         
+         <p id="pricel3" class="price">10$</p>   
+         <button id="l3" class="addbutton" type="button" onclick="add()">Add</button>                      
+         </div>   
+       </td>
+       
+       <td class="td">
+        <div class="tddiv">
+         <img class="img" id="imgl4" src="4lunch.jpg">         
+         <p id="namel4" class="name">Nasi lemak</p>         
+         <p id="pricel4" class="price">10$</p>   
+         <button id="l4" class="addbutton" type="button" onclick="add()">Add</button>          
+        </div>              
+       </td>                          
+      </tr>
+      
+     
+      <tr class="menutr">
+       <td class="td">
+        <div class="tddiv">
+         <img class="img" id="imgl5" src="5lunch.jpg">         
+         <p id="namel5"class="name">Laksa</p>         
+         <p id="pricel5" class="price">10$</p>   
+         <button id="l5" class="addbutton" type="button" onclick="add()">Add</button>                        
+         </div>   
+       </td> 
+       <td class="td"></td>                     
+      </tr>
+ 
+       
+       <tr class="menutr">       
+       <td class="heading"  collspan="2">
+      <h3>Dinner</h3>
+      </tr> 
+      
+      
+      <tr class="menutr">
+       <td class="td">
+        <div class="tddiv">
+         <img class="img" id="imgd1" src="1dinner.jpg">         
+         <p id="named1" class="name">Barbecued stingray</p>         
+         <p id="priced1" class="price">10$</p>  
+         <button id="d1" class="addbutton" type="button" onclick="add()">Add</button>                       
+         </div>   
+       </td>
+       
+       <td class="td">
+        <div class="tddiv">
+         <img class="img" id="imgd2" src="2dinner.jpg">         
+         <p id="named2" class="name">Satay</p>         
+         <p id="priced2" class="price">10$</p>  
+         <button id="d2" class="addbutton" type="button" onclick="add()">Add</button>         
+        </div>              
+       </td>                          
+      </tr>
+      
+      
+      
+      <tr class="menutr">
+       <td class="td">
+        <div class="tddiv">
+         <img class="img" id="imgd3" src="3dinner.jpg">         
+         <p id="named3" class="name">Char siew meats on rice or nodules</p>         
+         <p id="priced3" class="price">10$</p>  
+         <button id="d3" class="addbutton" type="button" onclick="add()">Add</button>                     
+         </div>   
+       </td>
+       
+       <td class="td">
+        <div class="tddiv">
+         <img class="img" id="imgd4" src="4dinner.jpg">         
+         <p id="named4" class="name">Oyster omelette</p>         
+         <p id="priced4" class="price">10$</p>    
+         <button id="d4" class="addbutton" type="button" onclick="add()">Add</button>       
+        </div>              
+       </td>                          
+      </tr>
+      
+     
+      <tr class="menutr">
+       <td class="td">
+        <div class="tddiv">
+         <img class="img" id="imgd5" src="5dinner.jpg">         
+         <p id="named5" class="name">Bak  kut  teh and rice</p>         
+         <p id="priced5" class="price">10$</p>           
+         <button id="d5" class="addbutton" type="button" onclick="add()">Add</button>                   
+         </div>   
+       </td> 
+       <td class="td"></td>                     
+      </tr>
+ 
+       <tr class="menutr">       
+       <td class="heading"  collspan="2">
+      <h3>Desert</h3>
+      </tr> 
+      
+      
+      <tr class="menutr">
+       <td class="td">
+        <div class="tddiv">
+         <img class="img" id="imgde1" src="1desert.jpg">         
+         <p id="namede1" class="name">Chocolate molten cakes</p>         
+         <p id="pricede1" class="price">10$</p>   
+         <button id="de1" class="addbutton" type="button" onclick="add()">Add</button>                     
+         </div>   
+       </td>
+       
+       <td class="td">
+        <div class="tddiv">
+         <img class="img" id="imgde2" src="2desert.jpg">         
+         <p id="namede2" class="name">Classic chocolate mousse</p>         
+         <p id="pricede2" class="price">10$</p>   
+         <button id="de2" class="addbutton" type="button" onclick="add()">Add</button>        
+        </div>              
+       </td>                          
+      </tr>
+      
+      
+      
+      <tr class="menutr">
+       <td class="td">
+        <div class="tddiv">
+         <img class="img" id="imgde3" src="3desert.jpg">         
+         <p id="namede3" class="name">The Best Vanilla Cake</p>         
+         <p id="pricede3" class="price">10$</p>   
+         <button id="de3" class="addbutton" type="button" onclick="add()">Add</button>                   
+         </div>   
+       </td>
+       
+       <td class="td">
+        <div class="tddiv">
+         <img class="img" id="imgde4" id="imgde1"src="4desert.jpg">         
+         <p id="namede4" class="name">Banana pudding</p>         
+         <p id="pricede4" class="price">10$</p>  
+         <button id="de4" class="addbutton" type="button" onclick="add()">Add</button>         
+        </div>              
+       </td>                          
+      </tr>
+      
+     
+      <tr class="menutr">
+       <td class="td">
+        <div class="tddiv">
+         <img class="img" id="imgde5" src="5desert.jpg">         
+         <p id="namede5" class="name">Chocolate lava cakes</p>         
+         <p id="pricede5"class="price">10$</p> 
+         <button id="de5" class="addbutton" type="button" onclick="add()">Add</button>                      
+         </div>   
+       </td> 
+       <td class="td"></td>                     
+      </tr>
+ 
+       
+       
+       
+       
+       
+       
+       
+         
+
+            
+                  
+     </table>  
+        
+                                           
+        
+    </div>                             
+   </td>              
+  </tr>                                                       
+ </table>   
+    
+    
+    
+    
+
+
+    
+</main>
+
+
+
+
+
+    
+    
+<script src="order.js"></script>   
+    
+</body>
+</html>

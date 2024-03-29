@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page title</title>
+    <meta name="viewport" 
+    content="width=device-width, initial-scale=1">
+    <style>
+      *{
+        margin:0;
+        padding:0;                         
+      } 
+                                        
+     #ff{
+         font-size:1em;
+         color:tomato;         
+     }
+        
+     #restaurant{
+         font-size:0.5em;
+         color:gray;         
+     }
+     
+     header{
+         background-image:url("menu.jpg");                  
+         background-repeat:no-repeat; 
+         background-size:cover;      
+         height:18em;  
+                          
+     }  
+  
+     a.a:link{
+         font-size:.7em;
+         text-decoration:none;
+     
+     }
+     
+     a.a:active{
+         font-size:1em;
+         color:white;
+         text-decoration:none; 
+     } 
+        
+     a.a:visited{
+         font-size:.7em;
+         text-decoration:none; 
+     } 
+     
+     a.a:hover{
+         font-size:1em;
+         text-decoration:none;
+         color:white;
+     }
+     #currentpage{
+         color:tomato;
+         font-size:1.5em;
+     }
+     
+    .a{
+        color:#4e4e4e;
+        padding:0.3em;
+    }
+    
+    #headert{           
+        width:100%;     
+    } 
+    
+    #menu{
+       text-align:right;
+    }  
+    
+    #mainmenu{
+        
+        background-color:#c4c4c4;
+    
+    }   
+    
+    #line{
+        margin-top:-0.5em;
+        font-size:2.1em;
+        text-align:center; 
+    }   
+ .menudiv{
+        overflow-x:auto; 
+        
+        
+    }
+    
+    h2{
+        text-align:center; 
+        fomt-size:1.6em;
+    }
+    
+    h3{
+        padding-left:1em;
+        font-size:1.3em;
+    }
+    
+    .td{ 
+        height:10em;
+        width:7em;                
+    }
+    
+    
+    
+    
+    .img{   
+      height:10em;    
+      border-radius:0.3em 0.5em;                 
+    }
+    
+    .name{
+      text-align:center;   
+      color:#45111d;  
+      padding:0.3em 0em;
+      height:2em;
+    }
+   
+   
+    .price{
+      text-align:center;    
+      color:tomato;  
+       padding:0.1em 0em;   
+    }   
+    
+    a.aa:active{
+      
+      text-decoration:none; 
+      color:white;   
+       background-color:tomato;     
+       border:tomato 0.2em solid;      
+       border-radius:2em 2em;                  
+    }
+    
+    a.aa:link{      
+      text-decoration:none; 
+      color:white;
+       background-color:tomato;   
+       border:tomato 0.2em solid;      
+       border-radius:2em 2em;                         
+    }
+    
+    a.aa:hover{      
+      text-decoration:none;
+      color:white;  
+       background-color:tomato;     
+       border:tomato 0.2em solid;      
+       border-radius:2em 2em;                   
+    }
+    
+    a.aa:visited{      
+      text-decoration:none;
+      color:white;  
+       background-color:tomato;    
+       border:tomato 0.2em solid;      
+       border-radius:2em 2em;                     
+    }
+    
+   .order{   
+      text-align:center;       
+      padding:0.3em 0em;
+      margin:0.3em;          
+    }
+                    
+    
+    .tddiv{
+      margin:1em 1em;
+      background-color:#ffdfaa;    
+      border:solid 0.01em #ffdfaa;
+      0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;  
+      border-radius:0.5em 0.5em; 
+      font-size:1.2em;      
+      box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 
+      0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    }
+    </style>
+</head>
+<body>
+<header>
+<table id="headert">  
+ <tr>
+  <td>
+ 
+  <h1><span id="ff"><b>FF</b></span><span id="restaurant"><i>restaurant</i></span>
+  </h1>
+
+  </td>
+  <td id="menu">
+ 
+  
+    
+   <div id="options">
+    <a class="a" href="index.html" id="home">home</a>
+    <a class="a" href="menu.html" id="menu"><span id="currentpage">menu</span></a>
+    <a class="a" href="about.html" id="about">about</a>
+    <a class="a" href="report.html" id="report">report</a>
+    <a class="a" href="order.html" id="order">order</a>        
+   </div>                        
+                                        
+ </td>  
+ </tr>
+</table>
+</header>
+
+ <div id="mainmenu">
+     <h2><i>Top Categories</i></h2>   
+     <p id="line">-----------------</p>
+
+
+
+<!-- Breakfast menu -->
+  
+  <h3><i>Breakfast</i></h3> 
+  <div class="menudiv">
+  <table class="menutable">
+   <tr>
+     <td class="td">
+         <div class="tddiv">
+         <img class="img" src="1breakfast.jpg">         
+         <p class="name">Healthy porridge bowl</p>         
+         <p class="price">10$</p>         
+         <p class="order"><a class="aa" href="order.html">order now</a></p>
+         
+         </div>
+     </td> 
+     
+       
+      
+      <td class="td">
+         <div class="tddiv">
+         <img class="img" src="2breakfast.jpg">         
+         <p class="name">Spanish & tuna pancakes</p>         
+         <p class="price">10$</p>         
+         <p class="order"><a class="aa" href="order.html">order now</a></p>
+        
+         </div>
+     </td> 
+     
+     
+         
+      <td class="td">
+         <div class="tddiv">
+         <img class="img" src="3breakfast.jpg">         
+         <p class="name">Green egg</p>         
+         <p class="price">10$</p>         
+         <p class="order"><a class="aa" href="order.html">order now</a></p>        
+         </div>
+     </td> 
+     
+     
+      <td class="td">
+         <div class="tddiv">
+         <img class="img" src="4breakfast.jpg">         
+         <p class="name">Fruit & nut breakfast bowl</p>         
+         <p class="price">10$</p>         
+         <p class="order"><a class="aa" href="order.html">order now</a></p>        
+         </div>
+     </td>          
+       
+
+      <td class="td">
+         <div class="tddiv">
+         <img class="img" src="5breakfast.jpg">         
+         <p class="name">Saucy been baked eggs</p>         
+         <p class="price">10$</p>         
+         <p class="order"><a class="aa" href="order.html">order now</a></p>        
+         </div>
+     </td> 
+     
+     
+   </tr>                                               
+  </table>      
+   </div>    
+   
+   
+  <!-- lunch menu --> 
+   
+   
+  <h3><i>lunch </i></h3> 
+  <div class="menudiv">
+  <table class="menutable">
+   <tr>
+     <td class="td">
+         <div class="tddiv">
+         <img class="img" src="1lunch.jpg">         
+         <p class="name">Hainense chicken rice</p>         
+         <p class="price">10$</p>         
+         <p class="order"><a class="aa" href="order.html">order now</a></p>
+         
+         </div>
+     </td> 
+     
+       
+      
+      <td class="td">
+         <div class="tddiv">
+         <img class="img" src="2lunch.jpg">         
+         <p class="name">Char kuay teow</p>         
+         <p class="price">10$</p>         
+         <p class="order"><a class="aa" href="order.html">order now</a></p>
+        
+         </div>
+     </td> 
+     
+     
+         
+      <td class="td">
+         <div class="tddiv">
+         <img class="img" src="3lunch.jpg">         
+         <p class="name">Fish head curry</p>         
+         <p class="price">10$</p>         
+         <p class="order"><a class="aa" href="order.html">order now</a></p>        
+         </div>
+     </td> 
+     
+     
+      <td class="td">
+         <div class="tddiv">
+         <img class="img" src="4lunch.jpg">         
+         <p class="name">Nasi lemak</p>         
+         <p class="price">10$</p>         
+         <p class="order"><a class="aa" href="order.html">order now</a></p>        
+         </div>
+     </td>          
+       
+
+      <td class="td">
+         <div class="tddiv">
+         <img class="img" src="5lunch.jpg">         
+         <p class="name">Laksa</p>         
+         <p class="price">10$</p>         
+         <p class="order"><a class="aa" href="order.html">order now</a></p>        
+         </div>
+     </td> 
+     
+     
+   </tr>                                               
+  </table>      
+   </div>    
+      
+   
+   
+   
+  <!-- dinner menu --> 
+   
+   <h3><i>dinner</i></h3> 
+  <div class="menudiv">
+  <table class="menutable">
+   <tr>
+     <td class="td">
+         <div class="tddiv">
+         <img class="img" src="1dinner.jpg">         
+         <p class="name">Barbecued stingray</p>         
+         <p class="price">10$</p>         
+         <p class="order"><a class="aa" href="order.html">order now</a></p>
+         
+         </div>
+     </td> 
+     
+       
+      
+      <td class="td">
+         <div class="tddiv">
+         <img class="img" src="2dinner.jpg">         
+         <p class="name">Satay</p>         
+         <p class="price">10$</p>         
+         <p class="order"><a class="aa" href="order.html">order now</a></p>
+        
+         </div>
+     </td> 
+     
+     
+         
+      <td class="td">
+         <div class="tddiv">
+         <img class="img" src="3dinner.jpg">         
+         <p class="name">Char siew meats on rice or nodules </p>         
+         <p class="price">10$</p>         
+         <p class="order"><a class="aa" href="order.html">order now</a></p>        
+         </div>
+     </td> 
+     
+     
+      <td class="td">
+         <div class="tddiv">
+         <img class="img" src="4dinner.jpg">         
+         <p class="name">Oyster omelette </p>         
+         <p class="price">10$</p>         
+         <p class="order"><a class="aa" href="order.html">order now</a></p>        
+         </div>
+     </td>          
+       
+
+      <td class="td">
+         <div class="tddiv">
+         <img class="img" src="5dinner.jpg">         
+         <p class="name">Bak  kut  teh and rice</p>         
+         <p class="price">10$</p>         
+         <p class="order"><a class="aa" href="order.html">order now</a></p>        
+         </div>
+     </td> 
+     
+     
+   </tr>                                               
+  </table>      
+   </div>    
+   
+   
+   
+   
+  <!-- Desert meni --> 
+   
+  <h3><i>desert</i></h3> 
+  <div class="menudiv">
+  <table class="menutable">
+   <tr>
+     <td class="td">
+         <div class="tddiv">
+         <img class="img" src="1desert.jpg">         
+         <p class="name">Chocolate molten cakes </p>         
+         <p class="price">10$</p>         
+         <p class="order"><a class="aa" href="order.html">order now</a></p>
+         
+         </div>
+     </td> 
+     
+       
+      
+      <td class="td">
+         <div class="tddiv">
+         <img class="img" src="2desert.jpg">         
+         <p class="name">Classic chocolate mousse </p>         
+         <p class="price">10$</p>         
+         <p class="order"><a class="aa" href="order.html">order now</a></p>
+        
+         </div>
+     </td> 
+     
+     
+         
+      <td class="td">
+         <div class="tddiv">
+         <img class="img" src="3desert.jpg">         
+         <p class="name">The Best Vanilla Cake</p>         
+         <p class="price">10$</p>         
+         <p class="order"><a class="aa" href="order.html">order now</a></p>        
+         </div>
+     </td> 
+     
+     
+      <td class="td">
+         <div class="tddiv">
+         <img class="img" src="4desert.jpg">         
+         <p class="name">Banana pudding</p>         
+         <p class="price">10$</p>         
+         <p class="order"><a class="aa" href="order.html">order now</a></p>        
+         </div>
+     </td>          
+       
+
+      <td class="td">
+         <div class="tddiv">
+         <img class="img" src="5desert.jpg">         
+         <p class="name"> Chocolate lava cakes</p>         
+         <p class="price">10$</p>         
+         <p class="order"><a class="aa" href="order.html">order now</a></p>        
+         </div>
+     </td> 
+     
+     
+   </tr>                                               
+  </table>      
+   </div>    
+        
+   
+   
+   
+     
+ </div>
+
+
+    
+</body>
+</html>

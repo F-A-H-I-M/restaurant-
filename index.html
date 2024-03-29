@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page title</title>
+      <meta name="viewport" 
+    content="width=device-width, initial-scale=1">
+    <style> 
+      *{
+        margin:0;
+        padding:0;                         
+      } 
+                                        
+     #ff{
+         font-size:1em;
+         color:tomato;         
+     }
+        
+     #restaurant{
+         font-size:0.5em;
+         color:gray;         
+     }
+     
+    header{
+         background-image:url("home.jpg");                  
+         background-repeat:no-repeat; 
+         background-size:cover;      
+         height:15em;  
+                          
+     }  
+  
+     a.a:link{
+         font-size:.7em;
+         text-decoration:none;
+     
+     }
+     
+     a.a:active{
+         font-size:1em;
+         color:white;
+         text-decoration:none; 
+     } 
+        
+     a.a:visited{
+         font-size:.7em;
+         text-decoration:none; 
+     } 
+     
+     a.a:hover{
+         font-size:1em;
+         text-decoration:none;
+         color:white;
+     }
+     #currentpage{
+         color:tomato;
+         font-size:1.5em;
+     }
+     
+    .a{
+        color:#4e4e4e;
+        padding:0.3em;
+    }
+    
+    table{           
+     width:100%;     
+    } 
+    
+    #manu{
+         text-align:right;
+    }  
+    
+    
+    #ul{
+        
+         
+         font-size:0.9em;
+         padding:1.5em;      
+    }
+    
+    
+    #table{
+         background-color:#ffd26a;
+         height:20em;
+         
+    }
+    
+    form{
+        background-color:#e4bc5f;
+        text-align:center;
+        width:12em;
+        margin-left:1em;
+        
+       
+    }
+    
+    h3{
+        text-align:center;     
+        padding:1em;          
+        font-size:1em; 
+        color:#5c3900;      
+    }
+    
+    #feedback{
+        height:6em;
+        width:12em;
+        text-align:center;
+        margin:1em;
+    }
+    
+    #submit{
+        margin:0.5em; 
+        border:solid 0.2em #9f8342;
+        border-radius:1em 1em;
+        padding:0.2em 0.5em;
+        background-color:#e4bc5f;
+        color:white;
+        font-size:1em;
+        
+    }
+    
+    h2{
+        text-align:center;
+        font-size:1.1em;
+        color:#5c3900;
+    }
+    </style>
+</head>
+<body>
+<header>
+<table>  
+ <tr>
+  <td>
+ 
+  <h1><span id="ff"><b>FF</b></span><span id="restaurant"><i>restaurant</i></span>
+  </h1>
+
+  </td>
+  <td id="manu">
+ 
+  
+    
+   <div id="options">
+    <a class="a" href="order.html" id="home"><span id="currentpage">home</span></a>
+    <a class="a" href="menu.html" id="menu">menu</a>
+    <a class="a" href="about.html" id="about">about</a>
+    <a class="a" href="report.html" id="report">report</a>
+    <a class="a" href="order.html" id="offer">offers</a>        
+   </div>                        
+                                        
+ </td>  
+ </tr>
+</table>
+
+</header>
+ 
+ 
+<div>
+  
+  <table id="table">
+  <tr class="tr">
+  <td id="td1">
+ <h2>What we provide</h2>  
+  <div id="ul">
+     
+  <ul><i>
+   <li>Good service</li> 
+   <br> 
+   <li>Perfect delivery</li> 
+   <br>
+   <li>Low cost delivery</li>  
+   <br>
+   <li>Delivery in time</li>
+   <br>
+   <li>fresh food</li>
+   <br>
+   <li>best ingredients</li>      
+   </i>
+  </ul>
+  </div>    
+  </td>
+  
+  <td id="td2">
+   <div id="box">
+     <form>
+       <h3>Please give us feedback</h3> 
+     <input type="text" placeholder="Feedback us" required id="feedback">
+     <button type="submit" id="submit"><b>Feedback</b></button> 
+     </form>
+     </div>
+  </td>
+      
+     
+      
+  </tr>
+  
+  
+  
+  </table> 
+    
+</div> 
+ 
+ 
+
+
+
+
+<script src=""></script>    
+</body>
+</html>
